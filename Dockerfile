@@ -1,4 +1,8 @@
 FROM eclipse-temurin:25-jre
+<<<<<<< HEAD
+=======
+
+>>>>>>> f7ce5b83f3ccede568fe34aed6a680d9095fe63b
 
 # Diretório do servidor
 WORKDIR /hytale

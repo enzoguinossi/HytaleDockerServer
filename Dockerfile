@@ -23,7 +23,7 @@ RUN chmod +x /start.sh
 # Volume persistente do servidor
 VOLUME ["/hytale"]
 
-# Porta padrão (ajuste se necessário)
+# Porta padrão
 EXPOSE 5520
 
 ENTRYPOINT ["/start.sh"]

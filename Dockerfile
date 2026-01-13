@@ -1,4 +1,5 @@
-FROM eclipse-temurin:25.0.1_8-jre-alpine-3.23
+FROM eclipse-temurin:25-jre
+
 
 # Diretório do servidor
 WORKDIR /hytale

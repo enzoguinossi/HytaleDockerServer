@@ -1,13 +1,15 @@
-FROM eclipse-temurin:25.0.1_8-jre-alpine-3.23
+FROM eclipse-temurin:25-jre
 
 # Diretório do servidor
 WORKDIR /hytale
 
 # Dependências
-RUN apk add --no-cache \
-    curl \
-    unzip \
-    bash
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        curl \
+        unzip \
+        bash \
+    && rm -rf /var/lib/apt/lists/*
 
 # Baixar o downloader
 RUN curl -L https://downloader.hytale.com/hytale-downloader.zip -o hytale-downloader.zip \
